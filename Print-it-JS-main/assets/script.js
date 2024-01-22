@@ -37,6 +37,15 @@ clickevents.forEach((clickevents) => {
 slides.forEach(function (item, index, array) {
 	console.log(`Index ${index}: ${item}`);
   });
+  // si numero est supérieur à 0 on le remet à 0 afin de pouvoir boucler sur le tableau
+  if(numero > slides.length -1){
+	numero = 0;
+}
+
+// Permet de ne pas dépasser la longueur du tableau cela va parcourir les items du tableau
+if(numero < 0){
+	numero = slides.length -1;
+}
      
 
 

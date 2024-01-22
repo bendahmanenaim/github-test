@@ -34,10 +34,6 @@ clickevents.forEach((clickevents) => {
 	})
 });
 
-slides.forEach(function (item, index, array) {
-	console.log(`Index ${index}: ${item}`);
-  });
-     
 
 
 

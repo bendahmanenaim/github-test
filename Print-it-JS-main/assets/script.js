@@ -46,6 +46,15 @@ slides.forEach(function (item, index, array) {
 if(numero < 0){
 	numero = slides.length -1;
 }
+document.getElementById('prevBtn').addEventListener('click', () => {
+    stopAutoScroll();
+    prevSlide();
+  });
+
+  document.getElementById('nextBtn').addEventListener('click', () => {
+    stopAutoScroll();
+    nextSlide();
+  });
      
 
 

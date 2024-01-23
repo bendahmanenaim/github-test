@@ -72,3 +72,5 @@ function showSlide(index) {
   bannerImg.src = slides[index].image;
   textContainer.innerHTML = slides[index].tagLine;
 }
+setInterval("changeSlide(1)", 3000);
+

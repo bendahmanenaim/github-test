@@ -1,7 +1,5 @@
 
-// Création des bullet des images
-let bullet = `<div class="dot"></div>`;
-let dotsContainer = document.querySelector(".dots");
+
 
 // Initialisation des slides
 const slides = [
@@ -22,6 +20,9 @@ const slides = [
     "tagLine": "Autocollants <span>avec découpe laser sur mesure</span>"
   }
 ];
+// Création des bullet des images
+let bullet = `<div class="dot"></div>`;
+let dotsContainer = document.querySelector(".dots");
 
 // Ajout des balises dot dans l'élément "dots"
 dotsContainer.innerHTML = bullet.repeat(slides.length);
@@ -60,7 +61,7 @@ function changeSlide(offset) {
   dots[newIndex].classList.add("dot_selected");
   dotSelected.classList.remove("dot_selected");
 
-  // Change également la slide en fonction du nouvel index
+  // Change la slide en fonction du nouvel index
   showSlide(newIndex);
 }
 
